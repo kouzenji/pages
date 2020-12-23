@@ -1,0 +1,153 @@
+@charset "utf-8";
+.prayer {
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+	margin-bottom: -50px;
+}
+.slide-wrap {
+	padding: 20px 0;
+	background: #eeeeee;
+	margin-bottom: 0;
+}
+
+.slide-class {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.animation-slide {
+	position: relative;
+}
+
+
+.slick-slide .s-scale-img {
+	width: 100%;
+	transform: scale( .75 );
+}
+
+.slick-active .s-scale-img {
+	animation: ScaleAni .5s ease .5s 1 normal both;
+}
+.slick-slide .s-fade-txt {
+    position: absolute;
+    top: 80%;
+    right: 15%;
+    font-size: 2em;
+    color: #fff;
+    opacity: 0;
+}
+
+.slick-active .s-fade-txt {
+    animation: FadeAni .5s ease 1s 1 normal both;
+}
+.s-fade-txt img {
+	float: left;
+	width: 3em;
+	height: auto;
+    margin-top: -1em;
+}
+
+@keyframes FadeAni {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.BGColor3 {
+	background-color:#B70003;
+}
+.BGColor {
+	background-color: #0000cd;
+}
+.BGColor2 {
+	background-color: #ffb6c1;
+}
+
+.Sarrow {
+	position: absolute;
+    top: 50%;
+    margin-top: -15px;
+}
+.Anext {
+	background: url(../images/foxwalkPC.png);
+	width: 120px;
+	height: 120px;
+}
+.Anext.active {
+	-webkit-animation: walk 1.0s steps(6) 1;
+	-moz-animation: walk 1.0s steps(6) 1;
+	-ms-animation: walk 1.0s steps(6) 1;
+	-o-animation: walk 1.0s steps(6) 1;
+	animation: walk 1.0s steps(6) 1;
+}
+
+@-webkit-keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -720px; }
+}
+@-moz-keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -720px; }
+}
+@-ms-keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -720px; }
+}
+@-o-keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -720px; }
+}
+@keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -720px; }
+}
+
+/*Mobile*/
+@media (max-width:768px) {
+	.prayer {
+	font-size: 1.5em;
+	text-align: center;
+	color: #fff;
+	margin-bottom: -20px;
+}
+	.slick-slide .s-fade-txt {
+    position: absolute;
+    top: 75%;
+    right: 13%;
+    font-size: 1.5em;
+    color: #fff;
+    opacity: 0;
+	white-space: nowrap;
+}
+	.Anext {
+	background: url(../images/foxwalk.png);
+	width: 60px;
+	height: 60px;
+}
+	.Anext.active {
+	-webkit-animation: walk 1.0s steps(6) 1;
+	-moz-animation: walk 1.0s steps(6) 1;
+	-ms-animation: walk 1.0s steps(6) 1;
+	-o-animation: walk 1.0s steps(6) 1;
+	animation: walk 1.0s steps(6) 1;
+}
+@-webkit-keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -720px; }
+}
+@-moz-keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -360px; }
+}
+@-ms-keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -360px; }
+}
+@-o-keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -360px; }
+}
+@keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -360px; }
+}
+

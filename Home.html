@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>天台宗 光禅寺</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="css/pc.css" media="screen and ( min-width:767px )">
+<link rel="stylesheet" href="css/mobile.css" media="screen and ( max-width:768px )">
+<link rel="stylesheet" href="css/news.css">
+</head>
+
+<body>
+	<div id="wrapper">
+	<header>
+		<ul id="menu">
+			<li><a href="Home.html"><img src="images/houju.png"></a></li>
+			<li><a href="History.html">歴史</a></li>
+		    <li><a href="Events.html">行事・教室・会</a></li>
+		    <li><a href="Prayer.html">祈願・供養・境内案内</a></li>
+			<li><a href="Access.html">アクセス</a></li>
+			<li><a href="Shrine.html">小豆畑神社</a></li>
+	    </ul>
+		<div id="sp-icon" class="sp-open"><span></span><span></span><span></span></div>
+		<link rel="shortcut icon" href="images/favicon.ico" >
+	</header>
+	<main>
+	<div id="honzon">
+	  <h1 class="meishou"><a href="Home.html">天台宗 光禅寺</a></h1>
+	  <img src="images/honzon.jpg" alt="地蔵菩薩" title="天台宗光禅寺本尊">
+	</div>
+
+		
+		<div id="newsbox">
+	<h2 class="news">お知らせ</h2>
+<ul id="articles">
+
+</ul>
+
+<nav>
+  <button class="prev-article" disabled>戻る</button>
+  <button class="next-article">過去記事</button>
+</nav>
+
+<script type="template" id="article-template">
+  <li class="{{category}}" style="z-index:{{z-index}};">
+    <div class="card-image">
+    </div>
+    <div class="card-content">
+      <h2>{{title}}</h2>
+      <div class="description">
+        {{description}}
+      </div>
+    </div>
+  </li>
+</script>
+<div id="backup">
+	<channel>
+		<item>
+			<h2><title>令和2年9月22日<br>秋の祈願祭</title></h2>
+			<description><p>午前9時半～ 祈願<br>午前10時～バヤラト氏/馬頭琴演奏会<br>演奏終了次第　秋彼岸合同供養<br><br><br></p></description>	
+		</item>
+		<item>
+			<h2><title>平成31年2月3日<br>節分会</title></h2>
+			<description><p>午後三時～　日数心経<br>午後六時～　祈願祈祷・豆まき<br><br>※お札をご希望の場合はお早めにお申し込み下さい。<br><br><br></p></description>	
+		</item>
+		<item>
+			<h2><title>平成30年9月23日<br>秋の祈願祭</title></h2>
+			<description><p>午前9時～ 祈願（お茶のお振舞）<br>午前10時～ダヴィット・ヤジンスキー氏/山岸永世氏 クラリネット/ヴァイオリン演奏会<br>午前10時35分～日本笑い学会「マヨネーズ」様ご講演<br>11時半～秋彼岸合同供養<br><br><br></p></description>	
+				</item>
+		<item>
+			<h2><title><br></title></h2>
+			<description><p><br><br><br><br><br><br><br></p></description>	
+		</item>
+	</channel>
+</div>
+	</div>
+		
+	
+		
+	</main>
+	
+	<footer>
+	<hr class="fline">
+	<p class="footinfo">〒980-0011　仙台市青葉区上杉4-4-50　℡022-222-2598  E-Mail:i@kouzenji.org</p>
+	<p class="copy"><i class="fa fa-copyright"></i>宗教法人 光禅寺　All rights reserved.</p>
+    </footer>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/sp-menu.js"></script>
+<script src="js/news.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+</body>
+</html>

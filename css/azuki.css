@@ -1,0 +1,71 @@
+@charset "utf-8";
+.azukish {
+	margin: auto;
+	background-color: #2B00BF;
+	position: relative;
+	text-align: center;
+}
+
+.azukish img {
+	width: 70%;
+	animation-name: azukish;
+	-webkit-animation-name: azukish;
+	animation-duration: 10s;
+	-webkit-animation-duration: 10s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	opacity: 0;
+}
+
+.azukish .img1 {
+	display: block;
+	margin: 0 auto;
+}
+
+.azukish .img2 {
+	animation-delay:5s;
+	-webkit-animation-delay:5s;
+	position: absolute;
+	top: 0;
+	left: 15%;
+}
+
+@keyframes azukish {
+	0% {
+		opacity: 0;
+	}
+	
+	5% {
+		opacity: 1;
+	}
+
+	45% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes azukish {
+	0% {
+		opacity: 0;
+	}
+	
+	5% {
+		opacity: 1;
+	}
+
+	45% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
