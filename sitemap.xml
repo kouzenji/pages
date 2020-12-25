@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>https://kouzenji.org/</loc>
+  <priority>1.0</priority>
+  <lastmod>2020-12-25T14:04:21+09:00</lastmod>
+</url>
+<url>
+  <loc>https://kouzenji.org/History.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-12-25T14:04:21+09:00</lastmod>
+</url>
+<url>
+  <loc>https://kouzenji.org/Events.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-12-25T14:04:21+09:00</lastmod>
+</url>
+<url>
+  <loc>https://kouzenji.org/Prayer.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-12-25T14:04:21+09:00</lastmod>
+</url>
+<url>
+  <loc>https://kouzenji.org/Access.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-12-25T14:04:21+09:00</lastmod>
+</url>
+<url>
+  <loc>https://kouzenji.org/Shrine.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-12-25T14:04:21+09:00</lastmod>
+</url>
+<url>
+  <loc>https://kouzenji.org/pdf/citymap.pdf</loc>
+  <priority>0.7</priority>
+  <lastmod>2020-12-25T14:04:21+09:00</lastmod>
+</url>
+
+</urlset>
