@@ -11,7 +11,19 @@
 	margin-bottom: 0;
 }
 
-.slide-class {
+.slide-class1 {
+	max-width: 800px;
+	margin: 0 auto;
+}
+.slide-class2 {
+	max-width: 800px;
+	margin: 0 auto;
+}
+.slide-class3 {
+	max-width: 800px;
+	margin: 0 auto;
+}
+.slide-class4 {
 	max-width: 800px;
 	margin: 0 auto;
 }
@@ -67,12 +79,48 @@
     top: 50%;
     margin-top: -15px;
 }
-.Anext {
+.Anext1 {
 	background: url(../images/foxwalkPC.png);
 	width: 120px;
 	height: 120px;
 }
-.Anext.active {
+.Anext1.active {
+	-webkit-animation: walk 1.0s steps(6) 1;
+	-moz-animation: walk 1.0s steps(6) 1;
+	-ms-animation: walk 1.0s steps(6) 1;
+	-o-animation: walk 1.0s steps(6) 1;
+	animation: walk 1.0s steps(6) 1;
+}
+.Anext2 {
+	background: url(../images/foxwalkPC.png);
+	width: 120px;
+	height: 120px;
+}
+.Anext2.active {
+	-webkit-animation: walk 1.0s steps(6) 1;
+	-moz-animation: walk 1.0s steps(6) 1;
+	-ms-animation: walk 1.0s steps(6) 1;
+	-o-animation: walk 1.0s steps(6) 1;
+	animation: walk 1.0s steps(6) 1;
+}
+.Anext3 {
+	background: url(../images/foxwalkPC.png);
+	width: 120px;
+	height: 120px;
+}
+.Anext3.active {
+	-webkit-animation: walk 1.0s steps(6) 1;
+	-moz-animation: walk 1.0s steps(6) 1;
+	-ms-animation: walk 1.0s steps(6) 1;
+	-o-animation: walk 1.0s steps(6) 1;
+	animation: walk 1.0s steps(6) 1;
+}
+.Anext4 {
+	background: url(../images/foxwalkPC.png);
+	width: 120px;
+	height: 120px;
+}
+.Anext4.active {
 	-webkit-animation: walk 1.0s steps(6) 1;
 	-moz-animation: walk 1.0s steps(6) 1;
 	-ms-animation: walk 1.0s steps(6) 1;
@@ -118,12 +166,48 @@
     opacity: 0;
 	white-space: nowrap;
 }
-	.Anext {
+	.Anext1 {
 	background: url(../images/foxwalk.png);
 	width: 60px;
 	height: 60px;
 }
-	.Anext.active {
+	.Anext1.active {
+	-webkit-animation: walk 1.0s steps(6) 1;
+	-moz-animation: walk 1.0s steps(6) 1;
+	-ms-animation: walk 1.0s steps(6) 1;
+	-o-animation: walk 1.0s steps(6) 1;
+	animation: walk 1.0s steps(6) 1;
+}
+	.Anext2 {
+	background: url(../images/foxwalk.png);
+	width: 60px;
+	height: 60px;
+}
+	.Anext2.active {
+	-webkit-animation: walk 1.0s steps(6) 1;
+	-moz-animation: walk 1.0s steps(6) 1;
+	-ms-animation: walk 1.0s steps(6) 1;
+	-o-animation: walk 1.0s steps(6) 1;
+	animation: walk 1.0s steps(6) 1;
+}
+	.Anext3 {
+	background: url(../images/foxwalk.png);
+	width: 60px;
+	height: 60px;
+}
+	.Anext3.active {
+	-webkit-animation: walk 1.0s steps(6) 1;
+	-moz-animation: walk 1.0s steps(6) 1;
+	-ms-animation: walk 1.0s steps(6) 1;
+	-o-animation: walk 1.0s steps(6) 1;
+	animation: walk 1.0s steps(6) 1;
+}
+	.Anext4 {
+	background: url(../images/foxwalk.png);
+	width: 60px;
+	height: 60px;
+}
+	.Anext4.active {
 	-webkit-animation: walk 1.0s steps(6) 1;
 	-moz-animation: walk 1.0s steps(6) 1;
 	-ms-animation: walk 1.0s steps(6) 1;
