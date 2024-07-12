@@ -1,7 +1,7 @@
 // JavaScript Document
 var CORSProxy = "https://cors-atnceu.herokuapp.com/";
 var activeArticle = 0;
-var totalArticle = 3;
+var totalArticle = 7;
 
 var xDown = null;
 var yDown = null;
@@ -46,7 +46,7 @@ function fetchFeed(url){
     dataType: "xml",
     error:function(xhr, ajaxOptions, thrownError){
       //$("#articles").append("<li class='error'><h2>Can't Fetch News :/</h2></li>");
-      //$("#articles").css("max-height","100px");
+      //$("#articles").css("max-height","2000px");
       generateCards($("#backup").html(),false);
       $(".limit-error").addClass("show");
     },
@@ -54,6 +54,8 @@ function fetchFeed(url){
       generateCards(xml,true);
     }
   });
+  $("#articles li:first").find(".card-content").addClass("open");
+  $("#articles").css("max-height", "2000px");
 }
 
 function generateHtml(data){
@@ -83,15 +85,15 @@ function generateCards(xml,isCDATA){
     $("#articles").append(html);
     fetchImage(url,i);
   }
-  $("#articles").css("max-height","80px");
+  $("#articles").css("max-height","2000px");
   arrangeCards();
 
   $("#articles li").click(function(){
     $(this).find(".card-content").toggleClass("open");
-	$("#articles").css("max-height","80px");
+	$("#articles").css("max-height","2000px");
     if($(this).find(".card-content").hasClass("open")){
       $("#articles li").eq(activeArticle).find("a").removeAttr("tabindex");
-	   $("#articles").css("max-height","330px");
+	   $("#articles").css("max-height","2000px");
     }
   });
 
@@ -218,4 +220,26 @@ $(function(){
   document.getElementById("articles").addEventListener('touchstart', handleTouchStart, false);        
   document.getElementById("articles").addEventListener('touchmove', handleTouchMove, false);
   
+});
+
+$(document).ready(function() {
+    // 拡大可能な画像にイベントリスナーを追加
+    $(document).on('click', '.enlargeable', function(event) {
+        event.stopPropagation();  // 他のイベントハンドラがトリガーされるのを防ぐ
+        var modal = $('#imageModal');
+        $('#modalImg').attr('src', $(this).attr('src'));
+        modal.show();
+    });
+
+    // モーダルのクローズボタン
+    $('.modal .close').on('click', function() {
+        $(this).closest('.modal').hide();
+    });
+
+    // モーダルの外側をクリックしたとき
+    $(window).on('click', function(event) {
+        if ($(event.target).is('#imageModal')) {
+            $('#imageModal').hide();
+        }
+    });
 });
