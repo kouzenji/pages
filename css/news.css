@@ -121,7 +121,7 @@ nav button[disabled]:hover {
 #articles li .card-content {
   background:gold;
   opacity: 1;
-  position: relative;
+  position: absolute;
   padding: 5px 15px;
   top: 0;
 
