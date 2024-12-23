@@ -219,10 +219,19 @@ nav button[disabled]:hover {
 
 .close {
     position: absolute;
-    top: 10px;
-    right: 25px;
+    top: -50px; /* モーダルウィンドウ内画像の上辺よりさらに上 */
+    right: -50px; /* モーダルウィンドウ内画像の右辺よりさらに右 */
     color: white;
+    background: black; /* 赤い背景を追加 */
+    opacity: 0.5;
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1001; /* モーダル内の他の要素より前面に表示 */
 }
